@@ -4,9 +4,9 @@ Market Logic Survey Microservice, Sample Survey Questions with 4 option answers,
 For swagger : http://localhost:8081/swagger-ui.html
 
 H2 Database is used : http://localhost:8081/h2-console/
-Driver Class: org.h2.Driver
-JDBC URL:jdbc:h2:mem:surveydb
-User Name:sa
+Driver Class: org.h2.Driver,
+JDBC URL:jdbc:h2:mem:surveydb,
+User Name:sa,
 Password:
 
 Provided 5 rest apis:
