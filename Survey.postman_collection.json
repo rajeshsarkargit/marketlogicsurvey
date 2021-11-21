@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "4b283bc8-a70c-4408-a7c9-990350736384",
+		"name": "Survey",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddQuestion",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"question\":\n\t\t\t{\n\t\t\t\t\"description\":\"How was your experience?\"\n\t\t\t},\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"description\":\"In Java 10 years\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"description\":\"In Microservice 5 years\"\n\t\t\t}\n\t\t]\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/survey/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"survey",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SubmitQuestionWithAnswer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"question\":\n\t\t\t{\n\t\t\t\t\"description\":\"How was your experience?\"\n\t\t\t},\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"description\":\"In Java 10 years\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"description\":\"In Microservice 5 years\"\n\t\t\t}\n\t\t]\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/survey/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"survey",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteQuestionAns",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"question\":\n\t\t\t{\n\t\t\t\t\"description\":\"How was your experience?\"\n\t\t\t},\n\t\t\"answers\":[\n\t\t\t{\n\t\t\t\t\"description\":\"In Java 10 years\"\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"description\":\"In Microservice 5 years\"\n\t\t\t}\n\t\t]\n}"
+				},
+				"url": {
+					"raw": "localhost:8081/survey/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"survey",
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/questions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/questions",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/questions/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/questions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"questions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8082/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/v2/api-docs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/v2/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"v2",
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/swagger-ui.html",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8081/swagger-ui.html",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"swagger-ui.html"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
