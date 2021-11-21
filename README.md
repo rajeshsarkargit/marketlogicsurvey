@@ -1,8 +1,8 @@
 # marketlogicsurvey
 Market Logic Survey Microservice
-
+For swagger : http://localhost:8081/swagger-ui.html
 providing post api to 
-  add question localhost:8081/survey/questions
+  add question : http://http://localhost:8081/survey/questions
   sample request: {
 		"question":
 			{
@@ -17,8 +17,8 @@ providing post api to
 			}
 		]
   }
-  delete particular question localhost:8081/survey/questions/1
-  submit answers of that question localhost:8081/survey/submitQuestions
+  delete particular question : http://localhost:8081/survey/questions/1
+  submit answers of that question : http://localhost:8081/survey/submitQuestions
   sample request :
       [
       {
@@ -32,5 +32,5 @@ providing post api to
                 }
       }
     ]
-    To get all Questions localhost:8081/survey/questions
-    To get particular question localhost:8081/survey/questions/1
+    To get all Questions : http://localhost:8081/survey/questions
+    To get particular question : http://localhost:8081/survey/questions/1
