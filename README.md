@@ -34,3 +34,5 @@ providing post api to
     ]
     To get all Questions : http://localhost:8081/survey/questions
     To get particular question : http://localhost:8081/survey/questions/1
+    
+    Added junit tests as well
